@@ -1,11 +1,9 @@
 dnl Process this file with autoconf to produce a configure script.
-AC_INIT(sted2/sted.c)
-AM_CONFIG_HEADER(config.h)
-AM_INIT_AUTOMAKE(sted2,`sed -n -e 's/^.*VERSION.*"\(.*\)"$/\1/p' ${srcdir}/sted2/version.h`)
-PACKAGE="sted2"
-VERSION=`sed -n -e 's/^.*VERSION.*"\(.*\)"$/\1/p' ${srcdir}/sted2/version.h`
-AC_SUBST(PACKAGE)
-AC_SUBST(VERSION)
+VERSION=`sed -n -e 's/^.*VERSION.*"\(.*\)"$/\1/p' sted2/version.h`
+AC_INIT([sted2], [$VERSION])
+AC_CONFIG_SRCDIR([sted2/sted.c])
+AC_CONFIG_HEADERS([config.h])
+AM_INIT_AUTOMAKE
 
 dnl Checks for programs.
 dnl if test -z "${CFLAGS}"; then
@@ -16,10 +14,12 @@ dnl   CFLAGS="$CCOPTS"
 dnl fi
 
 AC_PROG_CC
+CFLAGS="$CFLAGS -fcommon"
 
 dnl Set of available languages.
 ALL_LINGUAS="ja"
-AM_GNU_GETTEXT
+AM_GNU_GETTEXT_VERSION([0.21])
+AM_GNU_GETTEXT([external])
 AC_CHECK_FUNC(gettext,,AC_CHECK_LIB(intl,gettext))
 
 dnl Misc definition
@@ -226,16 +226,16 @@ fi
 AC_DEFINE_UNQUOTED(PACKAGE, "$PACKAGE")
 AC_DEFINE_UNQUOTED(VERSION, "$VERSION")
 
-AC_OUTPUT(
+AC_CONFIG_FILES([
 Makefile
 sted2/Makefile
 sted2/sub/Makefile
 sted2/sayleen/Makefile
 sted2/itor/Makefile
-intl/Makefile
 po/Makefile.in
 etc/Makefile
 doc/Makefile
 doc/original_docs/Makefile
 contrib/Makefile
-)
+])
+AC_OUTPUT

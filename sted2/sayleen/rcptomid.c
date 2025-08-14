@@ -833,15 +833,14 @@ static int set_tempo_track ( RCP_DATA *rcp ) {
   /* converter notice */
   if ( rcp->enable_converter_notice == FLAG_TRUE ) {
     int *len;
-
-    sprintf( buf,"
-This file was converted by %s version %s (%s - %s).
-Original RCP file is \"%s\" (%s, %d bytes).",
-	     (rcp->command_name!=NULL)?rcp->command_name:rcptomid_name,
-	     VERSION_ID, VERSION_TEXT1, VERSION_TEXT2,
-	     (rcp->file_name!=NULL)?rcp->file_name:undefined_filename,
-	     (rcp->date!=NULL)?rcp->date:undefined_date,
-	     rcp->length );
+      sprintf( buf,
+               "This file was converted by %s version %s (%s - %s). "
+               "Original RCP file is \"%s\" (%s, %d bytes).",
+               (rcp->command_name!=NULL)?rcp->command_name:rcptomid_name,
+               VERSION_ID, VERSION_TEXT1, VERSION_TEXT2,
+               (rcp->file_name!=NULL)?rcp->file_name:undefined_filename,
+               (rcp->date!=NULL)?rcp->date:undefined_date,
+               rcp->length );
     
     i=0;
     while ( buf[i]!=0 ) i++;
