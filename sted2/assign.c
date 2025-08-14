@@ -38,7 +38,7 @@ TEMPO            :
 */
 
 unsigned char	stgt_name[10][4]={
-  "ë¿","ëÀ","ëÁ","ëÂ","ëÃ","ëÄ","ëÅ","ëÆ","ëÇ","ëÉ"};
+  "Ã«Â¿","Ã«Ã€","Ã«Ã","Ã«Ã‚","Ã«Ãƒ","Ã«Ã„","Ã«Ã…","Ã«Ã†","Ã«Ã‡","Ã«Ã‰"};
 
 void	sinput();
 int	vinput();
@@ -602,7 +602,7 @@ int	tagj(int *po,int fl)
 }
 
 /***************************/
-inline void	part_as()
+void part_as()
 {
   int	ke,sh,i,j,x=0,y=0,scr,gy;
   char	tmp[128];
@@ -726,7 +726,7 @@ int	part_sel(int yy)
 }
 
 /***************************/
-inline void	rec_filter(int md)
+void rec_filter(int md)
 {
   int	i,y=0,x=0,gy;
   char	tmp[128];
