@@ -134,7 +134,7 @@ static int smfload( char *fna ) {
 
   smfbuf = (unsigned char *)malloc(sizeof(unsigned char)*size);
   if ( smfbuf==NULL ) {fclose(fp);return(-1);}
-  fread(smfbuf, 1, size, fp);
+  if ( fread(smfbuf, 1, size, fp) != (size_t)size ) {fclose(fp);free(smfbuf);return(-1);} 
   fclose(fp);
 
   rcpbuf = (unsigned char *)malloc(sizeof(unsigned char)*DATA_ADR_SIZE);
@@ -197,7 +197,7 @@ int	dload(char *fna,int md)
 
   if(!(fp= fopen2(fna,"rb"))){msg(_("File not found."));return(-1);}
 
-  fread(hed,1,1414,fp);
+  if ( fread(hed,1,1414,fp) != 1414 ) {fclose(fp);return(-1);} 
 
   if( strcmp(sread(0,30),rcp_id)!=0 ){
     msg(_("Invalid file format."));fclose(fp);return(-1);}
@@ -207,7 +207,7 @@ int	dload(char *fna,int md)
   if(md==1){stra=18;max=36;}else{dinit();hedread();}
 
   for(i=stra;i<max;i++){
-    fread(hed,1,44,fp);size=thedread(i);size2=0;
+    if ( fread(hed,1,44,fp) != 44 ) {fclose(fp);return(-1);} size=thedread(i);size2=0;
     if( size>TRACK_SIZE ){size2=size;size=TRACK_SIZE;}
 
     if(size_change(i,size)){break;}
@@ -222,7 +222,8 @@ int	dload(char *fna,int md)
       msg(_("Track buffer exhausted."));size2-=size;
       while( size2>0 ){
 	if( size2>TRACK_SIZE ){j=TRACK_SIZE;}else{j=size2;}
-	fread(dat,1,j,fp);size2=size2-j;
+        size_t r = fread(dat,1,j,fp);
+        size2 -= r;
       }
     }
   }
@@ -322,7 +323,7 @@ int	part_load(char *fna)
   FILE	*fp;
 
   if(!(fp= fopen2(fna,"rb"))){msg(_("File not found."));return(-1);}
-  fread(hed,1,8,fp);ln=fread(dat,1,work_size,fp);fclose(fp);
+  if ( fread(hed,1,8,fp) != 8 ) {fclose(fp);return(-1);} ln=fread(dat,1,work_size,fp);fclose(fp);
   if( strcmp(sread(0,5),prt_id)!=0 ){
     msg(_("Invalid file format."));return(-1);}
   sz=hed[7]*256+hed[6];
@@ -353,11 +354,11 @@ int	trk_load(char *fna)
 
   if(!(fp= fopen2(fna,"rb"))){msg(_("File not found."));return(-1);}
 
-  fread(hed,1,16,fp);
+  if ( fread(hed,1,16,fp) != 16 ) {fclose(fp);return(-1);}
   if( strcmp(sread(0,15),trk_id)!=0 ){
     msg(_("Invalid file format."));fclose(fp);return(-1);}
 
-  fread(hed,1,44,fp);ln=fread(dat,1,work_size,fp);fclose(fp);
+  if ( fread(hed,1,44,fp) != 44 ) {fclose(fp);return(-1);} ln=fread(dat,1,work_size,fp);fclose(fp);
   sz=hed[0]+hed[1]*256-44;
   if( ln<sz ){msg(_("Invalid file."));return(-1);}
 
@@ -544,7 +545,7 @@ int	timload(char *fna)
   FILE	*fp;
 
   if(!(fp= fopen2(fna,"rb"))){msg(_("File not found."));return(-1);}
-  fread(cm6,1,22601,fp);fclose(fp);
+  if ( fread(cm6,1,22601,fp) != 22601 ) {fclose(fp);return(-1);} fclose(fp);
   tim_name_read();asin_change();
   return(0);
 }
@@ -567,7 +568,7 @@ int	gsdload(char *fna)
   FILE	*fp;
 
   if(!(fp= fopen2(fna,"rb"))){msg(_("File not found."));return(-1);}
-  fread(gsd,1,4096,fp);fclose(fp);
+  if ( fread(gsd,1,4096,fp) != 4096 ) {fclose(fp);return(-1);} fclose(fp);
   return(0);
 }
 

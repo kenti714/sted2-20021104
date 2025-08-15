@@ -246,11 +246,11 @@ static int proc_header( void )
   }
   
   /*
-  strpaste( RCP_HEAD.memo +  28, ( unsigned char * )"  ¤³¤Î¥Ç¡¼¥¿¤Ï¡¢" );
-  strpaste( RCP_HEAD.memo +  84, ( unsigned char * )"  É¸½àMIDI¥Õ¥©¡¼¥Ş¥Ã¥È¤«¤é" );
-  strpaste( RCP_HEAD.memo + 140, ( unsigned char * )"  ItoR.x (v1.00)¤Ë¤è¤ê" );
+  strpaste( RCP_HEAD.memo +  28, ( unsigned char * )"  ã“ã®ãƒ‡ãƒ¼ã‚¿ã¯ã€" );
+  strpaste( RCP_HEAD.memo +  84, ( unsigned char * )"  æ¨™æº–MIDIãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã‹ã‚‰" );
+  strpaste( RCP_HEAD.memo + 140, ( unsigned char * )"  ItoR.x (v1.00)ã«ã‚ˆã‚Š" );
   strpaste( RCP_HEAD.memo + 151, ( unsigned char * )version );
-  strpaste( RCP_HEAD.memo + 196, ( unsigned char * )"  ÊÑ´¹¤µ¤ì¤Ş¤·¤¿¡£" );
+  strpaste( RCP_HEAD.memo + 196, ( unsigned char * )"  å¤‰æ›ã•ã‚Œã¾ã—ãŸã€‚" );
   strpaste( RCP_HEAD.memo + 252, ( unsigned char * )"  Copyright 1990-97" );
   strpaste( RCP_HEAD.memo + 280, ( unsigned char * )"           HARPOON,TURBO" );
   */
@@ -265,7 +265,7 @@ static int proc_header( void )
     
     if( !comment ) {
       if( std_head.division > tb_max ) {
-	printf( "¥¿¥¤¥à¥Ù¡¼¥¹¤ò%d¤ËÊÑ¹¹¤·¤Ş¤¹¡£\n\n",tb_max );
+	printf( "ã‚¿ã‚¤ãƒ ãƒ™ãƒ¼ã‚¹ã‚’%dã«å¤‰æ›´ã—ã¾ã™ã€‚\n\n",tb_max );
       }
     }
     
@@ -274,7 +274,7 @@ static int proc_header( void )
     RCP_HEAD.Timebaseh = std_head.division>>8;
     
     if( !comment ) {
-      printf( "¥¿¥¤¥à¥Ù¡¼¥¹¤òÊÑ¹¹¤·¤Ş¤»¤ó¡£\n\n" );
+      printf( "ã‚¿ã‚¤ãƒ ãƒ™ãƒ¼ã‚¹ã‚’å¤‰æ›´ã—ã¾ã›ã‚“ã€‚\n\n" );
     }
     
   }
@@ -561,7 +561,7 @@ static void ent_buf( int nt, int vl, int gt )
     cbuf[15] = midi_ch;
 
     /*
-      fprintf( stderr, "¥Î¡¼¥È¥ª¡¼¥Ğ¥Õ¥í¡¼\n" );	exit(18);
+      fprintf( stderr, "ãƒãƒ¼ãƒˆã‚ªãƒ¼ãƒãƒ•ãƒ­ãƒ¼\n" );	exit(18);
       */
   }
 
@@ -794,7 +794,7 @@ static void proc_meta( int meta, unsigned char *text, int length )
 
 	i = 60000000 / ( ( text[0] << 16 ) + ( text[1] << 8 ) + text[2] );
 	i = 64 * i / RCP_HEAD.Tempo;
-	/*ÀßÄê¤·¤¿¤¤¥Æ¥ó¥İ¡à½é´üÀßÄê¥Æ¥ó¥İ¡ß64*/
+	/*è¨­å®šã—ãŸã„ãƒ†ãƒ³ãƒÃ·åˆæœŸè¨­å®šãƒ†ãƒ³ãƒÃ—64*/
 	if( i > 255 ) {
 	  i = 255;
 	} else {
@@ -873,7 +873,7 @@ static void proc_excl( unsigned char *text, int length ,int code)
 	}
       }
 
-      /*fprintf( stderr, "ÉÔÀµEXCLUSIVE¥á¥Ã¥»¡¼¥¸ \n" );
+      /*fprintf( stderr, "ä¸æ­£EXCLUSIVEãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ \n" );
 	exit(18);*/
 
       return;
@@ -1041,7 +1041,7 @@ static int proc_track( void )
   if(barlenb[0]>0 && trk>0){barlen=barlenb[barno++];}
   
   if( !comment ) {
-    printf( "Track= %2d  %04X\n", trk, std_trk.length );
+    printf( "Track= %2d  %04lX\n", trk, std_trk.length );
   }
   
   if(chbport!=0 && trk>16 ){chport=16;}

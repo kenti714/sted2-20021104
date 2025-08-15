@@ -59,8 +59,10 @@ int get_midi_data( void ) {
 
     if ( FD_ISSET( midi_dev, &x) ) {
       unsigned char buf[16];
-      read( midi_dev, buf, 1);
-      ret = (int)buf[0];
+      ssize_t n = read( midi_dev, buf, 1);
+      if ( n > 0 ) {
+        ret = (int)buf[0];
+      }
     }
   }
 
@@ -92,7 +94,8 @@ int is_midi_in( void ) {
 void put_midi_data ( char data ) {
 
   if ( ismididevopened > 0 ) {
-    write( midi_dev, &data, 1 );
+    ssize_t n = write( midi_dev, &data, 1 );
+    (void)n;
   }
 
   return;

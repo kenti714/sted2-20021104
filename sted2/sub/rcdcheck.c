@@ -358,15 +358,28 @@ void _play_external_player( void ) {
     close(inter_cont[0]);
     close(cont_inter[1]);
     close(0);
-    dup(cont_inter[0]);
+    {
+      int fd = dup(cont_inter[0]);
+      (void)fd;
+    }
     close(1);
-    dup(inter_cont[1]);
+    {
+      int fd = dup(inter_cont[1]);
+      (void)fd;
+    }
   } else {
-    freopen("/dev/null","r",stdin);
-    freopen("/dev/null","a",stdout);
-    freopen("/dev/null","a",stderr);
+    FILE *fp;
+    fp = freopen("/dev/null","r",stdin);
+    (void)fp;
+    fp = freopen("/dev/null","a",stdout);
+    (void)fp;
+    fp = freopen("/dev/null","a",stderr);
+    (void)fp;
   }
-  freopen("/dev/null","a",stderr);
+  {
+    FILE *fp = freopen("/dev/null","a",stderr);
+    (void)fp;
+  }
   i=execvp(argv[0], argv);
   exit(0);
 }
@@ -383,7 +396,8 @@ void _stop_external_player( void ) {
   rcd->act = 0; /* stop */
   if ( STED_CONTROLLABLE ) {
     if ( CONTROL_FROM_PIPE ) {
-      write(pipe_out_fd,"STOP\n",5);
+      ssize_t n = write(pipe_out_fd,"STOP\n",5);
+      (void)n;
     }
     if ( DATA_FROM_FILE ) {
       unlink( tmp_file_name );
