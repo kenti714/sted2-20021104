@@ -33,6 +33,9 @@ int     str_search();
 void	msg();
 void	msg_clr();
 void	snsclr();
+void	all_note_off();
+void	twait(int ti);
+int	str_search();
 
 /***************************/
 void	m_keyb(int ch,int bank,int prg,int velo)
