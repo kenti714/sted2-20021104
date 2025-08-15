@@ -68,6 +68,10 @@ int	rec_ext();
 int	meas_adjust();
 int	meas_adj_sub();
 
+int     add_set();
+int     dat_add();
+void    memcpy_l();
+
 /***************************/
 int	real_record()
 {

@@ -8,7 +8,7 @@ static char	rym[10][3]={"- ","1 ","2 ","3 ","4 ","5 ","6 ","7 ","8 ","9 "};
 static char	rym_s[10][4]={"OFF"," 1 "," 2 "," 3 "," 4 "," 5 "," 6 "," 7 "," 8 "," 9 "};
 /*
 static char	rym0[10][3]={"- ","1 ","2 ","3 ","4 ","5 ","6 ","7 ","8 ","9 "};
-static char	rym1[10][3]={"๗ห","๗ฬ","๗อ","๗ฮ","๗ฯ","๗ะ","๗ั","๗า","๗ำ","๗ิ"};
+static char	rym1[10][3]={"รทร","รทร","รทร","รทร","รทร","รทร","รทร‘","รทร’","รทร“","รทร”"};
 static char	rym[10][3];
 */
 
@@ -39,7 +39,20 @@ void	cdplay();
 void	cntplay();
 void	trk_free();
 void	snsclr();
-void	twait();
+void        twait();
+
+void        edfield();
+void        trk_no();
+void        txxline();
+void        txyline();
+void        tcur();
+void        key_mouse_wait();
+void        cons_md();
+void        rhy_as();
+void        help();
+void        trk_lin();
+int add_set();
+void        sdis2();
 
 void	rtrk_ed();
 void	rtrk_dis();
