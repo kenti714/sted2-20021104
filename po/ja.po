@@ -6,166 +6,166 @@ msgstr ""
 "Last-Translator: Daisuke Nagano <breeze.nagano@nifty.ne.jp>\n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=euc-jp\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
 #: sted2/assign.c:183 sted2/assign.c:672 sted2/assign.c:954
 msgid "Initialize assign"
-msgstr "¥¢¥µ¥¤¥ó¤ò½é´ü²½¤·¤Ş¤¹¤«"
+msgstr "ã‚¢ã‚µã‚¤ãƒ³ã‚’åˆæœŸåŒ–ã—ã¾ã™ã‹"
 
 #: sted2/assign.c:348
 msgid "Loading Rhythm assign file"
-msgstr "Rhy.Ass.¥Õ¥¡¥¤¥ë¤Î¥í¡¼¥ÉÃæ¤Ç¤¹¡£"
+msgstr "Rhy.Ass.ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ­ãƒ¼ãƒ‰ä¸­ã§ã™ã€‚"
 
 #: sted2/assign.c:364
 msgid "Saving Rhythm assign file"
-msgstr "Rhy.Ass.¥Õ¥¡¥¤¥ë¤Î¥»¡¼¥ÖÃæ¤Ç¤¹¡£"
+msgstr "Rhy.Ass.ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚»ãƒ¼ãƒ–ä¸­ã§ã™ã€‚"
 
 #: sted2/assign.c:374
 msgid "Change all rhythm name"
-msgstr "¥ê¥º¥à¥Í¡¼¥à¤ò°ì³çÊÑ¹¹¤·¤Ş¤¹¤«"
+msgstr "ãƒªã‚ºãƒ ãƒãƒ¼ãƒ ã‚’ä¸€æ‹¬å¤‰æ›´ã—ã¾ã™ã‹"
 
 #: sted2/assign.c:434
 msgid "Find repetition of key number. Ok"
-msgstr "¥­¡¼¥Ê¥ó¥Ğ¡¼¤¬½ÅÊ£¤·¤Æ¤¤¤Ş¤¹¡£¤è¤í¤·¤¤¤Ç¤¹¤«"
+msgstr "ã‚­ãƒ¼ãƒŠãƒ³ãƒãƒ¼ãŒé‡è¤‡ã—ã¦ã„ã¾ã™ã€‚ã‚ˆã‚ã—ã„ã§ã™ã‹"
 
 #: sted2/assign.c:447
 msgid "Replace all track datas"
-msgstr "¥È¥é¥Ã¥¯¡¦¥Ç¡¼¥¿¤ò½ñ¤­´¹¤¨¤Ş¤¹¤«"
+msgstr "ãƒˆãƒ©ãƒƒã‚¯ãƒ»ãƒ‡ãƒ¼ã‚¿ã‚’æ›¸ãæ›ãˆã¾ã™ã‹"
 
 #: sted2/assign.c:452
 msgid "Now processing ..."
-msgstr "½èÍıÃæ..."
+msgstr "å‡¦ç†ä¸­..."
 
 #: sted2/assign.c:871
 msgid "Init. Ok"
-msgstr "½é´ü²½¤·¤Ş¤¹¤«"
+msgstr "åˆæœŸåŒ–ã—ã¾ã™ã‹"
 
 #: sted2/cm6con.c:341
 msgid "Sending voice data (  )"
-msgstr "²»¿§¥Ç¡¼¥¿Å¾Á÷Ãæ...(  )"
+msgstr "éŸ³è‰²ãƒ‡ãƒ¼ã‚¿è»¢é€ä¸­...(  )"
 
 #: sted2/cm6con.c:352
 msgid "Cannot execute: TE.x"
-msgstr "TE.x:µ¯Æ°½ĞÍè¤Ş¤»¤ó¡£"
+msgstr "TE.x:èµ·å‹•å‡ºæ¥ã¾ã›ã‚“ã€‚"
 
 #: sted2/cm6con.c:383
 msgid "Initialize all control data"
-msgstr "¥³¥ó¥È¥í¡¼¥ë¡¦¥Ç¡¼¥¿¤ò½é´ü²½¤·¤Ş¤¹¤«"
+msgstr "ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ãƒ»ãƒ‡ãƒ¼ã‚¿ã‚’åˆæœŸåŒ–ã—ã¾ã™ã‹"
 
 #: sted2/cm6con.c:885
 msgid "Clear control data"
-msgstr "²»¿§¥Ç¡¼¥¿¤ò¥¯¥ê¥¢¤·¤Ş¤¹¤«"
+msgstr "éŸ³è‰²ãƒ‡ãƒ¼ã‚¿ã‚’ã‚¯ãƒªã‚¢ã—ã¾ã™ã‹"
 
 #: sted2/cm6con.c:1077 sted2/cm6con.c:1080
 msgid "Sending control data ..."
-msgstr "¥³¥ó¥È¥í¡¼¥ë¡¦¥Ç¡¼¥¿Å¾Á÷Ãæ..."
+msgstr "ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«ãƒ»ãƒ‡ãƒ¼ã‚¿è»¢é€ä¸­..."
 
 #: sted2/cm6con.c:1183
 msgid "Cannot execute: GE.x"
-msgstr "GE.x:µ¯Æ°½ĞÍè¤Ş¤»¤ó¡£"
+msgstr "GE.x:èµ·å‹•å‡ºæ¥ã¾ã›ã‚“ã€‚"
 
 #: sted2/defload.c:291 sted2/defload.c:1296 sted2/defload.c:1299
 msgid "Loading config file.\n"
-msgstr "ÄêµÁ¥Õ¥¡¥¤¥ë¤Î¥í¡¼¥ÉÃæ¤Ç¤¹¡£\n"
+msgstr "å®šç¾©ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ­ãƒ¼ãƒ‰ä¸­ã§ã™ã€‚\n"
 
 #: sted2/defload.c:295
 msgid "Compiling config file.\n"
-msgstr "ÄêµÁ¥Õ¥¡¥¤¥ë¤Î¥³¥ó¥Ñ¥¤¥ëÃæ¤Ç¤¹¡£\n"
+msgstr "å®šç¾©ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ä¸­ã§ã™ã€‚\n"
 
 #: sted2/defload.c:1155 sted2/defload.c:1268
 msgid "Compile complete.\n"
-msgstr "ÄêµÁ¥Õ¥¡¥¤¥ë¤ò¥³¥ó¥Ñ¥¤¥ë¤·¤Ş¤·¤¿¡£\n"
+msgstr "å®šç¾©ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã—ã¾ã—ãŸã€‚\n"
 
 #: sted2/defload.c:1210
 msgid "Cannot open file.\n"
-msgstr "¥Õ¥¡¥¤¥ë¤¬¥ª¡¼¥×¥ó½ĞÍè¤Ş¤»¤ó¡£\n"
+msgstr "ãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ªãƒ¼ãƒ—ãƒ³å‡ºæ¥ã¾ã›ã‚“ã€‚\n"
 
 #: sted2/defload.c:1303
 msgid "Dis-compiling config file.\n"
-msgstr "ÄêµÁ¥Õ¥¡¥¤¥ë¤ÎµÕ¥³¥ó¥Ñ¥¤¥ëÃæ¤Ç¤¹¡£\n"
+msgstr "å®šç¾©ãƒ•ã‚¡ã‚¤ãƒ«ã®é€†ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ä¸­ã§ã™ã€‚\n"
 
 #: sted2/defload.c:1308 sted2/defload.c:1310
 msgid "Invalid version number of config file.\n"
-msgstr "°ã¤¦¥Ğ¡¼¥¸¥ç¥ó¤Î¥Õ¥¡¥¤¥ë¤Ç¤¹¡£\n"
+msgstr "é•ã†ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®ãƒ•ã‚¡ã‚¤ãƒ«ã§ã™ã€‚\n"
 
 #. edit
 #: sted2/disp.c:10
 msgid "  TOP   "
-msgstr " ÀèÆ¬¹Ô "
+msgstr " å…ˆé ­è¡Œ "
 
 #: sted2/disp.c:10
 msgid " BOTTOM "
-msgstr " ºÇ½ª¹Ô "
+msgstr " æœ€çµ‚è¡Œ "
 
 #: sted2/disp.c:10
 msgid "REPLACE "
-msgstr "  ÃÖ´¹  "
+msgstr "  ç½®æ›  "
 
 #: sted2/disp.c:10
 msgid "  FIND  "
-msgstr "  ¸¡º÷  "
+msgstr "  æ¤œç´¢  "
 
 #: sted2/disp.c:10
 msgid " F.NEXT "
-msgstr "¼¡¸¡º÷¢­"
+msgstr "æ¬¡æ¤œç´¢â†“"
 
 #: sted2/disp.c:11
 msgid "  MARK  "
-msgstr "  ÈÏ°Ï  "
+msgstr "  ç¯„å›²  "
 
 #: sted2/disp.c:11
 msgid " DELETE "
-msgstr "  ºï½ü  "
+msgstr "  å‰Šé™¤  "
 
 #: sted2/disp.c:11
 msgid "  COPY  "
-msgstr "  Ê£¼Ì  "
+msgstr "  è¤‡å†™  "
 
 #: sted2/disp.c:11
 msgid "  PASTE "
-msgstr "  Å½ÉÕ  "
+msgstr "  è²¼ä»˜  "
 
 #: sted2/disp.c:11
 msgid " DOUBLE "
-msgstr " Æó½Å²½ "
+msgstr " äºŒé‡åŒ– "
 
 #. edit shift
 #: sted2/disp.c:14
 msgid " NOTES  "
-msgstr "NOTEÁàºî"
+msgstr "NOTEæ“ä½œ"
 
 #: sted2/disp.c:14
 msgid " OPTIM. "
-msgstr " ºÇÅ¬²½ "
+msgstr " æœ€é©åŒ– "
 
 #: sted2/disp.c:14
 msgid " S.DEL  "
-msgstr "»ØÄêºï½ü"
+msgstr "æŒ‡å®šå‰Šé™¤"
 
 #: sted2/disp.c:14
 msgid " F.BACK "
-msgstr "¸åÊı¸¡º÷"
+msgstr "å¾Œæ–¹æ¤œç´¢"
 
 #: sted2/disp.c:14
 msgid " F.PREV "
-msgstr "¼¡¸¡º÷¢¬"
+msgstr "æ¬¡æ¤œç´¢â†‘"
 
 #: sted2/disp.c:15
 msgid "SET UNDO"
-msgstr "UNDOÅĞÏ¿"
+msgstr "UNDOç™»éŒ²"
 
 #: sted2/disp.c:15
 msgid "DO UNDO "
-msgstr "UNDO¼Â¹Ô"
+msgstr "UNDOå®Ÿè¡Œ"
 
 #: sted2/disp.c:15
 msgid "MIX PST."
-msgstr "MIX Å½ÉÕ"
+msgstr "MIX è²¼ä»˜"
 
 #: sted2/disp.c:15
 msgid "REV.PST."
-msgstr "È¿Å¾Å½ÉÕ"
+msgstr "åè»¢è²¼ä»˜"
 
 #. one touch velo
 #: sted2/disp.c:15 sted2/disp.c:27 sted2/disp.c:30 sted2/disp.c:34
@@ -296,11 +296,11 @@ msgstr ""
 #. visual edit shift
 #: sted2/disp.c:34
 msgid "REV. U&D"
-msgstr "¾å²¼È¿Å¾"
+msgstr "ä¸Šä¸‹åè»¢"
 
 #: sted2/disp.c:34
 msgid "REV. L&R"
-msgstr "º¸±¦È¿Å¾"
+msgstr "å·¦å³åè»¢"
 
 #: sted2/disp.c:34
 msgid " RANDOM "
@@ -372,384 +372,384 @@ msgstr ""
 
 #: sted2/disp.c:639
 msgid "Cannot find help file."
-msgstr "HELP¥Õ¥¡¥¤¥ë¤¬¸«ÉÕ¤«¤ê¤Ş¤»¤ó¡£"
+msgstr "HELPãƒ•ã‚¡ã‚¤ãƒ«ãŒè¦‹ä»˜ã‹ã‚Šã¾ã›ã‚“ã€‚"
 
 #: sted2/disp.c:656
 msgid ""
 " [SPC]/[R.UP] NEXT PAGE  [BS]/[R.DOWN] PREV. PAGE  [TAB] SPECIFY PAGE  [ESC] "
 "EXIT"
 msgstr ""
-"[SPC]/[R.UP] ¼¡¤Î¥Ú¡¼¥¸  [BS]/[R.DOWN] Á°¤Î¥Ú¡¼¥¸  [TAB] ¥Ú¡¼¥¸»ØÄê  [ESC] "
+"[SPC]/[R.UP] æ¬¡ã®ãƒšãƒ¼ã‚¸  [BS]/[R.DOWN] å‰ã®ãƒšãƒ¼ã‚¸  [TAB] ãƒšãƒ¼ã‚¸æŒ‡å®š  [ESC] "
 "EXIT"
 
 #: sted2/edit.c:426 sted2/edit.c:571
 msgid "Invalid measure number."
-msgstr "»ØÄê½ĞÍè¤Ê¤¤¾®Àá¤Ç¤¹¡£"
+msgstr "æŒ‡å®šå‡ºæ¥ãªã„å°ç¯€ã§ã™ã€‚"
 
 #: sted2/edit.c:944
 msgid "Set undo buffer"
-msgstr "UNDO¥Ğ¥Ã¥Õ¥¡¤ËÅĞÏ¿¤·¤Ş¤·¤¿¡£"
+msgstr "UNDOãƒãƒƒãƒ•ã‚¡ã«ç™»éŒ²ã—ã¾ã—ãŸã€‚"
 
 #: sted2/edits.c:173
 msgid "Loading part data."
-msgstr "¥Ñ¡¼¥È¥Ç¡¼¥¿¤Î¥í¡¼¥ÉÃæ¤Ç¤¹¡£"
+msgstr "ãƒ‘ãƒ¼ãƒˆãƒ‡ãƒ¼ã‚¿ã®ãƒ­ãƒ¼ãƒ‰ä¸­ã§ã™ã€‚"
 
 #: sted2/edits.c:196
 msgid "Saving part data."
-msgstr "¥Ñ¡¼¥È¥Ç¡¼¥¿¤Î¥»¡¼¥ÖÃæ¤Ç¤¹¡£"
+msgstr "ãƒ‘ãƒ¼ãƒˆãƒ‡ãƒ¼ã‚¿ã®ã‚»ãƒ¼ãƒ–ä¸­ã§ã™ã€‚"
 
 #: sted2/edits.c:212
 msgid "Saving in text format."
-msgstr "¥Æ¥­¥¹¥È·Á¼°¤Ç½ñ¤­½Ğ¤·Ãæ¤Ç¤¹¡£"
+msgstr "ãƒ†ã‚­ã‚¹ãƒˆå½¢å¼ã§æ›¸ãå‡ºã—ä¸­ã§ã™ã€‚"
 
 #: sted2/edits.c:451 sted2/edits.c:468 sted2/edits.c:516 sted2/edits.c:535
 msgid "Invalid syntax."
-msgstr "»ØÄê¤Ë´Ö°ã¤¤¤¬Í­¤ê¤Ş¤¹¡£"
+msgstr "æŒ‡å®šã«é–“é•ã„ãŒæœ‰ã‚Šã¾ã™ã€‚"
 
 #: sted2/edits.c:537
 msgid "Replace ..."
-msgstr "ÃÖ´¹Ãæ..."
+msgstr "ç½®æ›ä¸­..."
 
 #: sted2/edits.c:537
 msgid "Delete ..."
-msgstr "ºï½üÃæ..."
+msgstr "å‰Šé™¤ä¸­..."
 
 #: sted2/edits.c:537
 msgid "Find ..."
-msgstr "¸¡º÷Ãæ..."
+msgstr "æ¤œç´¢ä¸­..."
 
 #: sted2/edits.c:675 sted2/edits.c:914 sted2/edits.c:964 sted2/file.c:398
 msgid "Terminated."
-msgstr "Ãæ»ß¤·¤Ş¤·¤¿¡£"
+msgstr "ä¸­æ­¢ã—ã¾ã—ãŸã€‚"
 
 #: sted2/edits.c:725 sted2/edits.c:733 sted2/edits.c:747 sted2/file.c:169
 #: sted2/file.c:216 sted2/file.c:733 sted2/file.c:799 sted2/track.c:202
 #: sted2/track.c:204 sted2/track.c:934 sted2/track.c:937
 msgid "Track buffer exhausted."
-msgstr "¥È¥é¥Ã¥¯ÍÆÎÌÉÔÂ­¤Ç¤¹¡£"
+msgstr "ãƒˆãƒ©ãƒƒã‚¯å®¹é‡ä¸è¶³ã§ã™ã€‚"
 
 #: sted2/edits.c:908
 msgid "Strings"
-msgstr "»ØÄêÊ¸»úÎó"
+msgstr "æŒ‡å®šæ–‡å­—åˆ—"
 
 #: sted2/edits.c:908
 msgid "Except specified TOTAL ST"
-msgstr "»ØÄêÃÍ³° TOTAL ST"
+msgstr "æŒ‡å®šå€¤å¤– TOTAL ST"
 
 #: sted2/edits.c:911
 msgid " Find ..."
-msgstr " ¸¡º÷Ãæ..."
+msgstr " æ¤œç´¢ä¸­..."
 
 #: sted2/edits.c:945 sted2/edits.c:984
 msgid "Pattern not found."
-msgstr "¸«ÉÕ¤«¤ê¤Ş¤»¤ó"
+msgstr "è¦‹ä»˜ã‹ã‚Šã¾ã›ã‚“"
 
 #: sted2/edits.c:961
 msgid "Searching companion REPEAT ..."
-msgstr "ÂĞREPEAT ¸¡º÷Ãæ..."
+msgstr "å¯¾REPEAT æ¤œç´¢ä¸­..."
 
 #: sted2/edits.c:1349
 msgid "UNDO buffer is empty."
-msgstr "UNDO¥Ğ¥Ã¥Õ¥¡¤Î¥Ç¡¼¥¿¤ÏÌµ¸ú¤Ç¤¹¡£"
+msgstr "UNDOãƒãƒƒãƒ•ã‚¡ã®ãƒ‡ãƒ¼ã‚¿ã¯ç„¡åŠ¹ã§ã™ã€‚"
 
 #: sted2/edits.c:1357
 msgid "UNDO !"
-msgstr "UNDO¤·¤Ş¤·¤¿¡£"
+msgstr "UNDOã—ã¾ã—ãŸã€‚"
 
 #: sted2/edits.c:1446
 #, c-format
 msgid "%4d times of SAME MEAS is invalid"
-msgstr "SAME MEAS¤¬%4d²Õ½êÌµ¸ú¤Ë¤Ê¤ê¤Ş¤·¤¿¡£"
+msgstr "SAME MEASãŒ%4dç®‡æ‰€ç„¡åŠ¹ã«ãªã‚Šã¾ã—ãŸã€‚"
 
 #: sted2/edits.c:1462
 msgid "Extracting SAME MEAS ..."
-msgstr "SAME MEAS Å¸³«Ãæ..."
+msgstr "SAME MEAS å±•é–‹ä¸­..."
 
 #: sted2/edits.c:1485
 msgid "Copy buffer will be exhausted. Not extract."
-msgstr "¥³¥Ô¡¼¥Ğ¥Ã¥Õ¥¡ÍÆÎÌ¤ò±Û¤¨¤ë¤Î¤Ç¡¢Å¸³«¤·¤Ş¤»¤ó¡£"
+msgstr "ã‚³ãƒ”ãƒ¼ãƒãƒƒãƒ•ã‚¡å®¹é‡ã‚’è¶Šãˆã‚‹ã®ã§ã€å±•é–‹ã—ã¾ã›ã‚“ã€‚"
 
 #: sted2/exclu.c:139
 msgid "Init all exclusive data"
-msgstr "¥¨¥¯¥¹¥¯¥ë¡¼¥·¥Ö¤ò½é´ü²½¤·¤Ş¤¹¤«"
+msgstr "ã‚¨ã‚¯ã‚¹ã‚¯ãƒ«ãƒ¼ã‚·ãƒ–ã‚’åˆæœŸåŒ–ã—ã¾ã™ã‹"
 
 #: sted2/exclu.c:256
 msgid "Loading Usr.Exc. file."
-msgstr "Usr.Exc.¥Õ¥¡¥¤¥ë¤Î¥í¡¼¥ÉÃæ¤Ç¤¹¡£"
+msgstr "Usr.Exc.ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ­ãƒ¼ãƒ‰ä¸­ã§ã™ã€‚"
 
 #: sted2/exclu.c:279
 msgid "Saving Usr.Exc. file."
-msgstr "Usr.Exc.¥Õ¥¡¥¤¥ë¤Î¥»¡¼¥ÖÃæ¤Ç¤¹¡£"
+msgstr "Usr.Exc.ãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚»ãƒ¼ãƒ–ä¸­ã§ã™ã€‚"
 
 #: sted2/exclu.c:512
 msgid "Loading Exclusive file."
-msgstr "Exclusive¥Õ¥¡¥¤¥ë¤Î¥í¡¼¥ÉÃæ¤Ç¤¹¡£"
+msgstr "Exclusiveãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ­ãƒ¼ãƒ‰ä¸­ã§ã™ã€‚"
 
 #: sted2/exclu.c:531
 msgid "Saving Exclusive."
-msgstr "Exclusive¥Õ¥¡¥¤¥ë¤Î¥»¡¼¥ÖÃæ¤Ç¤¹¡£"
+msgstr "Exclusiveãƒ•ã‚¡ã‚¤ãƒ«ã®ã‚»ãƒ¼ãƒ–ä¸­ã§ã™ã€‚"
 
 #: sted2/exclu.c:769 sted2/file.c:124 sted2/file.c:192 sted2/file.c:318
 #: sted2/file.c:348 sted2/file.c:450 sted2/file.c:499 sted2/file.c:540
 #: sted2/file.c:563
 msgid "File not found."
-msgstr "¥Õ¥¡¥¤¥ë¤¬¸«ÉÕ¤«¤ê¤Ş¤»¤ó¡£"
+msgstr "ãƒ•ã‚¡ã‚¤ãƒ«ãŒè¦‹ä»˜ã‹ã‚Šã¾ã›ã‚“ã€‚"
 
 #: sted2/exclu.c:843 sted2/file.c:262 sted2/file.c:290 sted2/file.c:334
 #: sted2/file.c:374 sted2/file.c:393 sted2/file.c:475 sted2/file.c:520
 #: sted2/file.c:552
 msgid "Cannot open file."
-msgstr "¥Õ¥¡¥¤¥ë¤¬¥ª¡¼¥×¥ó½ĞÍè¤Ş¤»¤ó¡£"
+msgstr "ãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ªãƒ¼ãƒ—ãƒ³å‡ºæ¥ã¾ã›ã‚“ã€‚"
 
 #: sted2/exclu.c:918
 msgid "Not a GS BAR DISPLAY DATA."
-msgstr "GS BAR DISPLAY DATA¤Ç¤Ï¤¢¤ê¤Ş¤»¤ó"
+msgstr "GS BAR DISPLAY DATAã§ã¯ã‚ã‚Šã¾ã›ã‚“"
 
 #: sted2/file.c:146 sted2/file.c:197 sted2/file.c:321 sted2/file.c:352
 #: sted2/file.c:456 sted2/file.c:461 sted2/file.c:504
 msgid "Invalid file format."
-msgstr "°ã¤¦¥Õ¥©¡¼¥Ş¥Ã¥È¤Î¥Õ¥¡¥¤¥ë¤Ç¤¹¡£"
+msgstr "é•ã†ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆã®ãƒ•ã‚¡ã‚¤ãƒ«ã§ã™ã€‚"
 
 #: sted2/file.c:163 sted2/file.c:210 sted2/file.c:324 sted2/file.c:356
 #: sted2/file.c:452 sted2/file.c:501
 msgid "Invalid file."
-msgstr "¥Õ¥¡¥¤¥ë¤¬²õ¤ì¤Æ¤¤¤Ş¤¹¡£"
+msgstr "ãƒ•ã‚¡ã‚¤ãƒ«ãŒå£Šã‚Œã¦ã„ã¾ã™ã€‚"
 
 #: sted2/file.c:271 sted2/file.c:308 sted2/file.c:338 sted2/file.c:381
 #: sted2/file.c:489 sted2/file.c:531 sted2/file.c:554
 msgid "Cannot write file."
-msgstr "¥Õ¥¡¥¤¥ë¤Î½ñ¤­¹ş¤ß¤Ë¼ºÇÔ¤·¤Ş¤·¤¿¡£"
+msgstr "ãƒ•ã‚¡ã‚¤ãƒ«ã®æ›¸ãè¾¼ã¿ã«å¤±æ•—ã—ã¾ã—ãŸã€‚"
 
 #: sted2/file.c:411
 msgid "Disk exhausted."
-msgstr "¥Ç¥£¥¹¥¯¤Î¶õ¤­¤¬Ìµ¤¯¤Ê¤ê¤Ş¤·¤¿¡£"
+msgstr "ãƒ‡ã‚£ã‚¹ã‚¯ã®ç©ºããŒç„¡ããªã‚Šã¾ã—ãŸã€‚"
 
 #: sted2/file.c:708 sted2/file.c:714 sted2/file.c:795
 msgid "Buffer is empty."
-msgstr "¥Ğ¥Ã¥Õ¥¡¤ËÍ­¸ú¤Ê¥Ç¡¼¥¿¤¬Í­¤ê¤Ş¤»¤ó¡£"
+msgstr "ãƒãƒƒãƒ•ã‚¡ã«æœ‰åŠ¹ãªãƒ‡ãƒ¼ã‚¿ãŒæœ‰ã‚Šã¾ã›ã‚“ã€‚"
 
 #: sted2/file.c:777 sted2/file.c:822 sted2/file.c:861 sted2/file.c:1003
 #: sted2/file.c:1085 sted2/record.c:651
 msgid "Too small RCD buffer."
-msgstr "RCD ¥Ğ¥Ã¥Õ¥¡ÍÆÎÌÉÔÂ­¤Ç¤¹¡£"
+msgstr "RCD ãƒãƒƒãƒ•ã‚¡å®¹é‡ä¸è¶³ã§ã™ã€‚"
 
 #: sted2/file.c:909
 msgid "Cannot start panel display."
-msgstr "¥Ñ¥Í¥ë¤¬µ¯Æ°½ĞÍè¤Ş¤»¤ó¡£"
+msgstr "ãƒ‘ãƒãƒ«ãŒèµ·å‹•å‡ºæ¥ã¾ã›ã‚“ã€‚"
 
 #: sted2/key_sub.c:141
 msgid "[ESC] to exit."
-msgstr "[ESC]¤Ç½ªÎ»¤·¤Ş¤¹¡£"
+msgstr "[ESC]ã§çµ‚äº†ã—ã¾ã™ã€‚"
 
 #: sted2/key_sub.c:790
 msgid "(b  )"
-msgstr "(¢õ )"
+msgstr "(â™­ )"
 
 #: sted2/key_sub.c:790
 msgid "(#  )"
-msgstr "(¢ô )"
+msgstr "(â™¯ )"
 
 #: sted2/record.c:117
 msgid "[ESC] to exit"
-msgstr "[ESC]¤Ç½ªÎ»¤·¤Ş¤¹¡£"
+msgstr "[ESC]ã§çµ‚äº†ã—ã¾ã™ã€‚"
 
 #: sted2/record.c:137
 msgid "Recording track is not specified."
-msgstr "¥ì¥³¡¼¥Ç¥£¥ó¥°¥È¥é¥Ã¥¯¤¬ÀßÄê¤µ¤ì¤Æ¤¤¤Ş¤»¤ó¡£"
+msgstr "ãƒ¬ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ãƒˆãƒ©ãƒƒã‚¯ãŒè¨­å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚"
 
 #: sted2/record.c:139
 msgid "Waiting for Recording ..."
-msgstr "RECORDING ÂÔµ¡Ãæ¡¦¡¦¡¦"
+msgstr "RECORDING å¾…æ©Ÿä¸­ãƒ»ãƒ»ãƒ»"
 
 #: sted2/record.c:350
 msgid "Recording buffer is exhausted."
-msgstr "¥ì¥³¡¼¥Ç¥£¥ó¥°¥Ğ¥Ã¥Õ¥¡¤¬°ìÇÕ¤Ë¤Ê¤ê¤Ş¤·¤¿"
+msgstr "ãƒ¬ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ãƒãƒƒãƒ•ã‚¡ãŒä¸€æ¯ã«ãªã‚Šã¾ã—ãŸ"
 
 #: sted2/record.c:369
 msgid "Recording finished."
-msgstr "RECORDING ½ªÎ»     "
+msgstr "RECORDING çµ‚äº†     "
 
 #.
 #. B_PRINT("    Used Size=");B_PRINT(fstr(ad,6));B_PRINT("byte");
 #.
 #: sted2/record.c:377
 msgid "Now Converting ... "
-msgstr "CONVERTÃæ¡¦¡¦¡¦    "
+msgstr "CONVERTä¸­ãƒ»ãƒ»ãƒ»    "
 
 #: sted2/record.c:379
 msgid "Finished"
-msgstr "½ªÎ»    "
+msgstr "çµ‚äº†    "
 
 #: sted2/record.c:380
 msgid "Press any key."
-msgstr "²¿¤«¥­¡¼¤ò²¡¤·¤Æ²¼¤µ¤¤¡£"
+msgstr "ä½•ã‹ã‚­ãƒ¼ã‚’æŠ¼ã—ã¦ä¸‹ã•ã„ã€‚"
 
 #: sted2/record.c:712
 msgid "Track size exhausted."
-msgstr "¥È¥é¥Ã¥¯¥µ¥¤¥º¤ò±Û¤¨¤Ş¤·¤¿¡£"
+msgstr "ãƒˆãƒ©ãƒƒã‚¯ã‚µã‚¤ã‚ºã‚’è¶Šãˆã¾ã—ãŸã€‚"
 
 #: sted2/record.c:849
 msgid "Invalid format.\n"
-msgstr "¥Õ¥©¡¼¥Ş¥Ã¥È¤¬°Û¾ï¤Ç¤¹¡£\n"
+msgstr "ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆãŒç•°å¸¸ã§ã™ã€‚\n"
 
 #: sted2/record.c:1069
 msgid "Invalid MIDI messages.\n"
-msgstr "ÉÔÀµMIDI¥á¥Ã¥»¡¼¥¸\n"
+msgstr "ä¸æ­£MIDIãƒ¡ãƒƒã‚»ãƒ¼ã‚¸\n"
 
 #: sted2/redit.c:592
 msgid "This track has too many steps. Cannot edit."
-msgstr "¤³¤Î¾®Àá¤ÏSTEP¤¬Â¿¤¹¤®¤Ş¤¹¡£ÊÔ½¸½ĞÍè¤Ş¤»¤ó¡£"
+msgstr "ã“ã®å°ç¯€ã¯STEPãŒå¤šã™ãã¾ã™ã€‚ç·¨é›†å‡ºæ¥ã¾ã›ã‚“ã€‚"
 
 #: sted2/select.c:973
 msgid "         [DOWN]SELECTER  [ESC]CANCEL  [RET]SELECT"
-msgstr "           [¢­]¥»¥ì¥¯¥¿  [ESC]¼è¤ê¾Ã¤·  [RET]·èÄê"
+msgstr "           [â†“]ã‚»ãƒ¬ã‚¯ã‚¿  [ESC]å–ã‚Šæ¶ˆã—  [RET]æ±ºå®š"
 
-#. msg("¥Õ¥¡¥¤¥ë¤¬¤¢¤ê¤Ş¤»¤ó¡£");goto reinp;
+#. msg("ãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ã‚Šã¾ã›ã‚“ã€‚");goto reinp;
 #: sted2/select.c:1040
 msgid "Directory not found."
-msgstr "¥Ç¥£¥ì¥¯¥È¥ê¤¬¤¢¤ê¤Ş¤»¤ó¡£"
+msgstr "ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªãŒã‚ã‚Šã¾ã›ã‚“ã€‚"
 
 #: sted2/select.c:1041
 msgid "Invalid directory name."
-msgstr "¥Ç¥£¥ì¥¯¥È¥êÌ¾¤¬°Û¾ï¤Ç¤¹¡£"
+msgstr "ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªåãŒç•°å¸¸ã§ã™ã€‚"
 
 #: sted2/select.c:1046
 msgid "  /   CHANGE DRIVE   /  SELECT"
-msgstr "öó/öô¥É¥é¥¤¥Ö°ÜÆ°  öñ/öòÁªÂò"
+msgstr "/å‡œç–‹è–€ã…å²¼æ¦®  /é¯€æŠ"
 
 #: sted2/select.c:1048
 msgid "                                      [RET]SELECT"
-msgstr "                                       [RET] ÁªÂò"
+msgstr "                                       [RET] é¸æŠ"
 
 #: sted2/select.c:1177
 msgid "Write protected."
-msgstr "½ñ¤­¹ş¤ß¤¬¶Ø»ß¤µ¤ì¤Æ¤¤¤Ş¤¹¡£"
+msgstr "æ›¸ãè¾¼ã¿ãŒç¦æ­¢ã•ã‚Œã¦ã„ã¾ã™ã€‚"
 
 #: sted2/select.c:1255
 msgid "No file."
-msgstr "¥Õ¥¡¥¤¥ë¤¬¤¢¤ê¤Ş¤»¤ó¡£"
+msgstr "ãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ã‚Šã¾ã›ã‚“ã€‚"
 
 #: sted2/select.c:1260
 msgid "Overwrite"
-msgstr "´û¤ËÂ¸ºß¤¹¤ë¥Õ¥¡¥¤¥ë¤Ë¾å½ñ¤­¤·¤Ş¤¹¤«"
+msgstr "æ—¢ã«å­˜åœ¨ã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã«ä¸Šæ›¸ãã—ã¾ã™ã‹"
 
 #: sted2/select.c:1263
 msgid "Terminate writing."
-msgstr "¥Õ¥¡¥¤¥ë¤Î½ñ¤­¹ş¤ß¤òÃæ»ß¤·¤Ş¤¹¡£"
+msgstr "ãƒ•ã‚¡ã‚¤ãƒ«ã®æ›¸ãè¾¼ã¿ã‚’ä¸­æ­¢ã—ã¾ã™ã€‚"
 
 #: sted2/select.c:1289
 msgid "Invalid drive name."
-msgstr "¥É¥é¥¤¥Ö»ØÄê¤¬Ìµ¸ú¤Ç¤¹¡£"
+msgstr "ãƒ‰ãƒ©ã‚¤ãƒ–æŒ‡å®šãŒç„¡åŠ¹ã§ã™ã€‚"
 
 #: sted2/select.c:1290
 msgid "Disk is not inserted."
-msgstr "¥Ç¥£¥¹¥¯¤¬Æş¤Ã¤Æ¤¤¤Ş¤»¤ó¡£"
+msgstr "ãƒ‡ã‚£ã‚¹ã‚¯ãŒå…¥ã£ã¦ã„ã¾ã›ã‚“ã€‚"
 
 #: sted2/select.c:1291
 msgid "Disk is not ready."
-msgstr "¥Ç¥£¥¹¥¯¤Î½àÈ÷¤¬½ĞÍè¤Æ¤¤¤Ş¤»¤ó¡£"
+msgstr "ãƒ‡ã‚£ã‚¹ã‚¯ã®æº–å‚™ãŒå‡ºæ¥ã¦ã„ã¾ã›ã‚“ã€‚"
 
 #: sted2/select.c:1420
 msgid "Too many files."
-msgstr "¥Õ¥¡¥¤¥ë¤¬Â¿¤¹¤®¤Ş¤¹¡£"
+msgstr "ãƒ•ã‚¡ã‚¤ãƒ«ãŒå¤šã™ãã¾ã™ã€‚"
 
 #: sted2/sted.c:284
 msgid "\t-M<size>\t Set the max size of track\n"
-msgstr "\t-M<size>\t1¥È¥é¥Ã¥¯¤ÎºÇÂçÍÆÎÌ¤ò»ØÄê¤¹¤ë\n"
+msgstr "\t-M<size>\t1ãƒˆãƒ©ãƒƒã‚¯ã®æœ€å¤§å®¹é‡ã‚’æŒ‡å®šã™ã‚‹\n"
 
 #: sted2/sted.c:285
 msgid "\t-U<size>\t Set the size of track buffer\n"
-msgstr "\t-U<size>\t¥È¥é¥Ã¥¯¥Ğ¥Ã¥Õ¥¡ÍÆÎÌ¤ò»ØÄê¤¹¤ë\n"
+msgstr "\t-U<size>\tãƒˆãƒ©ãƒƒã‚¯ãƒãƒƒãƒ•ã‚¡å®¹é‡ã‚’æŒ‡å®šã™ã‚‹\n"
 
 #: sted2/sted.c:286
 msgid "\t-W<size>\t Set the size of recording buffer\n"
-msgstr "\t-W<size>\t¥ì¥³¡¼¥Ç¥£¥ó¥°¥Ğ¥Ã¥Õ¥¡ÍÆÎÌ¤ò»ØÄê¤¹¤ë\n"
+msgstr "\t-W<size>\tãƒ¬ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ãƒãƒƒãƒ•ã‚¡å®¹é‡ã‚’æŒ‡å®šã™ã‚‹\n"
 
 #: sted2/sted.c:287
 msgid "\t-F<file>\t Specify Module configuration file\n"
-msgstr "\t-F<file>\t²»¸»ÄêµÁ¥Õ¥¡¥¤¥ë¤ò»ØÄê¤¹¤ë\n"
+msgstr "\t-F<file>\téŸ³æºå®šç¾©ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æŒ‡å®šã™ã‚‹\n"
 
 #: sted2/sted.c:288
 msgid "\t-B<num>\t\t Specify the name of PCM card (CM64)\n"
-msgstr "\t-B<num>\t\t²»¿§Ì¾É½¼¨¤Ë»ÈÍÑ¤¹¤ëPCM CARD¤ò»ØÄê¤¹¤ë\n"
+msgstr "\t-B<num>\t\téŸ³è‰²åè¡¨ç¤ºã«ä½¿ç”¨ã™ã‚‹PCM CARDã‚’æŒ‡å®šã™ã‚‹\n"
 
 #: sted2/sted.c:289
 msgid "\t-D<path>\t Specify the data directory\n"
-msgstr "\t-D<path>\t¥Ç¡¼¥¿¥Ç¥£¥ì¥¯¥È¥ê¤ò»ØÄê¤¹¤ë\n"
+msgstr "\t-D<path>\tãƒ‡ãƒ¼ã‚¿ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’æŒ‡å®šã™ã‚‹\n"
 
 #: sted2/sted.c:290
 msgid "\t-R\t\t Do pointplay with RCD function\n"
-msgstr "\t-R\t\t¥İ¥¤¥ó¥È¥×¥ì¥¤¤òRCD¤Îµ¡Ç½¤Ç¼Â¹Ô¤¹¤ë\n"
+msgstr "\t-R\t\tãƒã‚¤ãƒ³ãƒˆãƒ—ãƒ¬ã‚¤ã‚’RCDã®æ©Ÿèƒ½ã§å®Ÿè¡Œã™ã‚‹\n"
 
 #: sted2/sted.c:291
 msgid "\t-P\t\t Set panel displaying as default playing command\n"
-msgstr "\t-P\t\t±éÁÕ¥³¥Ş¥ó¥É¤Î¥Ç¥Õ¥©¥ë¥È¤ò¥Ñ¥Í¥ëÉ½¼¨¤Ë¤¹¤ë\n"
+msgstr "\t-P\t\tæ¼”å¥ã‚³ãƒãƒ³ãƒ‰ã®ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã‚’ãƒ‘ãƒãƒ«è¡¨ç¤ºã«ã™ã‚‹\n"
 
 #: sted2/sted.c:292
 msgid "\t-L\t\t Read the data in RCD buffer at boot time\n"
-msgstr "\t-L\t\tµ¯Æ°»ş¤ËRCD¥Ğ¥Ã¥Õ¥¡¤Î¥Ç¡¼¥¿¤òÆÉ¤ß¹ş¤à\n"
+msgstr "\t-L\t\tèµ·å‹•æ™‚ã«RCDãƒãƒƒãƒ•ã‚¡ã®ãƒ‡ãƒ¼ã‚¿ã‚’èª­ã¿è¾¼ã‚€\n"
 
 #: sted2/sted.c:293
 msgid ""
 "\t-S\t\t Don't copy the data to RCD buffer when exit\n"
 "\n"
 msgstr ""
-"\t-S\t\t½ªÎ»»ş¤ËRCD¥Ğ¥Ã¥Õ¥¡¤Ø¥Ç¡¼¥¿¤òÅ¾Á÷¤·¤Ê¤¤\n"
+"\t-S\t\tçµ‚äº†æ™‚ã«RCDãƒãƒƒãƒ•ã‚¡ã¸ãƒ‡ãƒ¼ã‚¿ã‚’è»¢é€ã—ãªã„\n"
 "\n"
 
 #: sted2/sted.c:298
 msgid "RCD is not running.\n"
-msgstr "RCD ¤¬¾ïÃó¤·¤Æ¤¤¤Ş¤»¤ó¡£\n"
+msgstr "RCD ãŒå¸¸é§ã—ã¦ã„ã¾ã›ã‚“ã€‚\n"
 
 #: sted2/sted.c:301
 msgid "Invalid RCD version.\n"
-msgstr "Ì¤ÂĞ±ş¤Î RCD ¤¬¾ïÃó¤·¤Æ¤¤¤Ş¤¹¡£\n"
+msgstr "æœªå¯¾å¿œã® RCD ãŒå¸¸é§ã—ã¦ã„ã¾ã™ã€‚\n"
 
 #: sted2/sted.c:308
 msgid "Invalid options.\n"
-msgstr "¥ª¥×¥·¥ç¥ó¤Î»ØÄê¤¬Ìµ¸ú¤Ç¤¹¡£\n"
+msgstr "ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã®æŒ‡å®šãŒç„¡åŠ¹ã§ã™ã€‚\n"
 
 #: sted2/sted.c:324 sted2/sted.c:334
 msgid "Cannot allocate track buffers.\n"
-msgstr "¥È¥é¥Ã¥¯¥Ğ¥Ã¥Õ¥¡¤¬³ÎÊİ½ĞÍè¤Ş¤»¤ó¡£\n"
+msgstr "ãƒˆãƒ©ãƒƒã‚¯ãƒãƒƒãƒ•ã‚¡ãŒç¢ºä¿å‡ºæ¥ã¾ã›ã‚“ã€‚\n"
 
 #: sted2/sted.c:394 sted2/sted.c:403 sted2/sted.c:443 sted2/sted.c:520
 #: sted2/sted.c:527 sted2/sted.c:664 sted2/sted.c:700 sted2/sted.c:707
 #: sted2/sted.c:1459
 msgid ": File not found.\n"
-msgstr ":¥Õ¥¡¥¤¥ë¤¬¸«ÉÕ¤«¤ê¤Ş¤»¤ó¡£\n"
+msgstr ":ãƒ•ã‚¡ã‚¤ãƒ«ãŒè¦‹ä»˜ã‹ã‚Šã¾ã›ã‚“ã€‚\n"
 
 #: sted2/sted.c:631
 msgid "Input new title"
-msgstr "¥¿¥¤¥È¥ë¤ò¿·µ¬ÆşÎÏ¤·¤Ş¤¹¤«"
+msgstr "ã‚¿ã‚¤ãƒˆãƒ«ã‚’æ–°è¦å…¥åŠ›ã—ã¾ã™ã‹"
 
 #: sted2/sted.c:669
 msgid "Initialize all data"
-msgstr "¥Ç¡¼¥¿¤ò½é´ü²½¤·¤Ş¤¹¤«"
+msgstr "ãƒ‡ãƒ¼ã‚¿ã‚’åˆæœŸåŒ–ã—ã¾ã™ã‹"
 
 #: sted2/sted.c:674
 msgid "Exit"
-msgstr "½ªÎ»¤·¤Ş¤¹¤«"
+msgstr "çµ‚äº†ã—ã¾ã™ã‹"
 
 #: sted2/sted.c:694
 msgid "Loading ..."
-msgstr "¥Ç¡¼¥¿¤Î¥í¡¼¥ÉÃæ¤Ç¤¹¡£"
+msgstr "ãƒ‡ãƒ¼ã‚¿ã®ãƒ­ãƒ¼ãƒ‰ä¸­ã§ã™ã€‚"
 
 #: sted2/sted.c:737
 msgid "Saving ..."
-msgstr "¥Ç¡¼¥¿¤Î¥»¡¼¥ÖÃæ¤Ç¤¹¡£"
+msgstr "ãƒ‡ãƒ¼ã‚¿ã®ã‚»ãƒ¼ãƒ–ä¸­ã§ã™ã€‚"
 
 #: sted2/sted.c:757
 msgid "Initialize memo"
-msgstr "¥á¥â¤ò½é´ü²½¤·¤Ş¤¹¤«"
+msgstr "ãƒ¡ãƒ¢ã‚’åˆæœŸåŒ–ã—ã¾ã™ã‹"
 
 #: sted2/sted.c:838 sted2/sted.c:916 sted2/sted.c:977
 msgid "This function is not available except for Main Menu."
-msgstr "Main Menu°Ê³°¤Ç¤ÏÌµ¸ú¤Ç¤¹¡£"
+msgstr "Main Menuä»¥å¤–ã§ã¯ç„¡åŠ¹ã§ã™ã€‚"
 
 #: sted2/sted.c:1126
 msgid "Return to STed2 ! Press [RET]"
-msgstr "STed2¤ËÌá¤ê¤Ş¤¹¡ª[RET]¥­¡¼¤ò²¡¤·¤Æ²¼¤µ¤¤"
+msgstr "STed2ã«æˆ»ã‚Šã¾ã™ï¼[RET]ã‚­ãƒ¼ã‚’æŠ¼ã—ã¦ä¸‹ã•ã„"
 
 #: sted2/sted.c:1137
 msgid "Y"
@@ -761,56 +761,56 @@ msgstr ""
 
 #: sted2/sted.c:1139
 msgid "? (Y/N)"
-msgstr "¡©(Y/N)"
+msgstr "ï¼Ÿ(Y/N)"
 
 #: sted2/track.c:330
 msgid "SAME MEAS converting ..."
-msgstr "SAME MEAS ÊÑ´¹Ãæ..."
+msgstr "SAME MEAS å¤‰æ›ä¸­..."
 
 #: sted2/track.c:373
 msgid " measures are converted."
-msgstr " ¾®ÀáÊÑ´¹¤·¤Ş¤·¤¿¡£"
+msgstr " å°ç¯€å¤‰æ›ã—ã¾ã—ãŸã€‚"
 
 #: sted2/track.c:375
 msgid "No repeated measures."
-msgstr "½ÅÊ£¤·¤¿¾®Àá¤ÏÍ­¤ê¤Ş¤»¤ó¡£"
+msgstr "é‡è¤‡ã—ãŸå°ç¯€ã¯æœ‰ã‚Šã¾ã›ã‚“ã€‚"
 
 #: sted2/track.c:423
 msgid " measures are extracted."
-msgstr " ¾®ÀáÅ¸³«¤·¤Ş¤·¤¿¡£"
+msgstr " å°ç¯€å±•é–‹ã—ã¾ã—ãŸã€‚"
 
 #: sted2/track.c:425
 msgid "No measures are extracted."
-msgstr "Å¸³«¤¹¤ë¾®Àá¤ÏÍ­¤ê¤Ş¤»¤ó¡£"
+msgstr "å±•é–‹ã™ã‚‹å°ç¯€ã¯æœ‰ã‚Šã¾ã›ã‚“ã€‚"
 
 #: sted2/trkset.c:533
 msgid "Delete all track data"
-msgstr "¥È¥é¥Ã¥¯¥Ç¡¼¥¿¤ò¾Ãµî¤·¤Ş¤¹¤«"
+msgstr "ãƒˆãƒ©ãƒƒã‚¯ãƒ‡ãƒ¼ã‚¿ã‚’æ¶ˆå»ã—ã¾ã™ã‹"
 
 #: sted2/trkset.c:541
 msgid "Optimize track data"
-msgstr "¥È¥é¥Ã¥¯¥Ç¡¼¥¿¤òºÇÅ¬²½¤·¤Ş¤¹¤«"
+msgstr "ãƒˆãƒ©ãƒƒã‚¯ãƒ‡ãƒ¼ã‚¿ã‚’æœ€é©åŒ–ã—ã¾ã™ã‹"
 
 #: sted2/trkset.c:565
 msgid "Compress track data"
-msgstr "¥È¥é¥Ã¥¯¥Ç¡¼¥¿¤ò°µ½Ì¤·¤Ş¤¹¤«"
+msgstr "ãƒˆãƒ©ãƒƒã‚¯ãƒ‡ãƒ¼ã‚¿ã‚’åœ§ç¸®ã—ã¾ã™ã‹"
 
 #: sted2/trkset.c:600
 msgid "Extrack track data"
-msgstr "¥È¥é¥Ã¥¯¥Ç¡¼¥¿¤òÅ¸³«¤·¤Ş¤¹¤«"
+msgstr "ãƒˆãƒ©ãƒƒã‚¯ãƒ‡ãƒ¼ã‚¿ã‚’å±•é–‹ã—ã¾ã™ã‹"
 
 #: sted2/trkset.c:633
 msgid "Loading track data ..."
-msgstr "¥È¥é¥Ã¥¯¥Ç¡¼¥¿¤Î¥í¡¼¥ÉÃæ¤Ç¤¹¡£"
+msgstr "ãƒˆãƒ©ãƒƒã‚¯ãƒ‡ãƒ¼ã‚¿ã®ãƒ­ãƒ¼ãƒ‰ä¸­ã§ã™ã€‚"
 
 #: sted2/trkset.c:651
 msgid "Saving track data ..."
-msgstr "¥È¥é¥Ã¥¯¥Ç¡¼¥¿¤Î¥»¡¼¥ÖÃæ¤Ç¤¹¡£"
+msgstr "ãƒˆãƒ©ãƒƒã‚¯ãƒ‡ãƒ¼ã‚¿ã®ã‚»ãƒ¼ãƒ–ä¸­ã§ã™ã€‚"
 
 #: sted2/visual.c:303
 msgid "Too few data."
-msgstr "¥Ç¡¼¥¿¤¬¾¯¤Ê¤¹¤®¤Ş¤¹¡£"
+msgstr "ãƒ‡ãƒ¼ã‚¿ãŒå°‘ãªã™ãã¾ã™ã€‚"
 
 #: sted2/visual.c:304 sted2/visual.c:577 sted2/visual.c:591 sted2/visual.c:600
 msgid "Too many data."
-msgstr "¥Ç¡¼¥¿¤¬Â¿¤¹¤®¤Ş¤¹¡£"
+msgstr "ãƒ‡ãƒ¼ã‚¿ãŒå¤šã™ãã¾ã™ã€‚"
