@@ -1,19 +1,17 @@
 # sted2-20021104
 
 ### How to build on Ubuntu24.04LTS
-
+```
 sudo apt install gcc make autoconf automake gettext libtool xorg-dev libxt-dev libncurses-dev
-
 ./configure
-
 make
-
+```
 ### issue
 To start Wayland or Xorg, start with DISPLAY set to none as follows.
-
+```
 unset DISPLAY
 ./sted2
-
+```
 
 ### Working image (Console)
 
@@ -49,4 +47,5 @@ FREE: 589356   USED:      0   TR.: 1   MODULE: Roland SC-88     STed v2.07  (c)1
  INIT        17 Play OFF   0   0 OFF                                          0            0
  EXIT        18 Play OFF   0   0 OFF                                          0            0
 ```
+
 
