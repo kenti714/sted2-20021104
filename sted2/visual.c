@@ -41,11 +41,20 @@ void	key_rep_on();
 int	key_shift();
 char	*ctrl_type();
 char	*prog_name();
+void	cons_md();
+void	sinput();
+int	spc_code();
+int	trk_check();
+void	line_ins_aft();
+void	edfield();
+int	step_cluc();
+
 
 void	txerase();
 void	txxline();
 void	txyline();
 void	g_print();
+void	g_print2();
 
 int	vinput();
 void	fnc_dis();
@@ -54,6 +63,7 @@ void	sdis();
 void	sdis2();
 void	vdis2();
 void	snsclr();
+void	memcpy_l();
 
 void	vis_disp();
 int	vis_bufset();
