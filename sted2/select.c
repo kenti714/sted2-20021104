@@ -2,7 +2,10 @@
  * STed: select.c (selecter)
  */
 
-#include	"sted.h"
+#include        "sted.h"
+
+void    noed_cls_t(void);
+int     _dos_nfiles(struct _x68_filbuf *);
 
 typedef struct {
   char		name[23];
@@ -844,12 +847,12 @@ redraw:
 
 /***************************/
 /*
-  1997-07-25	Trk.Editд╟[OPT1]+[CLR]д╟е╚еще├епесетдЄ╔╜╝ид╣ды
-  е╚еще├епе╗еьепе┐дЄ╕╞д╙╜╨д╗дыдшджд╦д╖д┐
-  1997-07-26	вмд╬е╚еще├епе╗еьепе┐╛хд╟дт[OPT1]+е╞еєенб╝д╟░▄
-  ╞░╜╨═шдыдшджд╦д╖д┐
-  1997-07-29	Trk.Editд╟д╬[CTRL]+[T]д╟[вн]д╟е╚еще├епе╗еьепе┐
-  дЄ╕╞д╙╜╨д╗дыдшджд╦д╖д┐
+  1997-07-25	Trk.EditуБз[OPT1]+[CLR]уБзуГИуГйуГГуВпуГбуГвуВТшбичд║уБЩуВЛ
+  уГИуГйуГГуВпуВ╗уГмуВпуВ┐уВТхС╝уБ│хЗ║уБЫуВЛуВИуБЖуБлуБЧуБЯ
+  1997-07-26	тЖСуБоуГИуГйуГГуВпуВ╗уГмуВпуВ┐ф╕КуБзуВВ[OPT1]+уГЖуГ│уВнуГ╝уБзчз╗
+  хЛХхЗ║цЭеуВЛуВИуБЖуБлуБЧуБЯ
+  1997-07-29	Trk.EditуБзуБо[CTRL]+[T]уБз[тЖУ]уБзуГИуГйуГГуВпуВ╗уГмуВпуВ┐
+  уВТхС╝уБ│хЗ║уБЫуВЛуВИуБЖуБлуБЧуБЯ
   */
 /*
   int	trk_sel_menu(int md)
@@ -1036,12 +1039,12 @@ void	fsel(char *fna,char *pth,int w)
     if(drvchk(pth)<0){nm=0;goto reinp;}
     nm=fdir(pth,exts,dir,w);
 
-    if( nm==0 || nm==-2 ){nm=0;/*msg("е╒ебедеыдмдвдъд▐д╗дєбг");goto reinp;*/}
+    if( nm==0 || nm==-2 ){nm=0;/*msg("уГХуВбуВдуГлуБМуБВуВКуБ╛уБЫуВУуАВ");goto reinp;*/}
     if( nm==-3         ){msg(_("Directory not found."));goto reinp;}
     if( nm==-13        ){msg(_("Invalid directory name."));goto reinp;}
     if( nm<0 && nm!=-2 ){msg("err.");B_PRINT(fstr(nm,4));goto reinp;}
 
-    /*		B_LOCATE(cx+1,29);B_PRINT("[вк]/[вл]е╔ещеде╓░▄╞░   ");*/
+    /*		B_LOCATE(cx+1,29);B_PRINT("[тЖТ]/[тЖР]уГЙуГйуВдуГЦчз╗хЛХ   ");*/
 #if 0 /* ignore drive change Jun.23.1998 Daisuke Nagano */
     B_LOCATE(cx+1,29);B_PRINT(_("  /   CHANGE DRIVE   /  SELECT"));
 #else
