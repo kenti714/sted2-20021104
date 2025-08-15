@@ -114,6 +114,15 @@ void	set_errvect();
 void	rst_errvect();
 void	keyclr();
 
+void	card_name_get(void);
+int	paraexe(char *tmp0,int ad,int ew,int sm,int cmd);
+void	cons_md(int);
+void	noed_cls(void);
+void	noed_cls_t(void);
+int	meas_no(int ad);
+int	bufset_trk(int tr);
+int	bufload_trk(int tr);
+
 void	path_cut();
 void	path_set();
 
