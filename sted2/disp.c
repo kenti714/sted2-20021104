@@ -83,6 +83,9 @@ void	msg_clr();
 void	trk_free();
 void	snsclr();
 void	trk_no();
+void	key_wait();
+void	txerase();
+int	channele_no();
 
 int isinputmode=0;
 

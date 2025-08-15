@@ -92,7 +92,7 @@ int XSTed_key_init( void ) {
   k_opt1  = querykey(KEY_OPT1);
   k_opt2  = querykey(KEY_OPT2);
 
-  return;
+  return 0;
 }
 
 

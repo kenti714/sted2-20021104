@@ -49,7 +49,7 @@ void XSTed_tlocate( int x, int y ) {
   return;
 }
 
-void XSTed_tputs( char *message ) {
+void XSTed_tputs( const char *message ) {
 
   int w,h,ht;
   int l;

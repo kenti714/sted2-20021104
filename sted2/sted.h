@@ -88,6 +88,10 @@
 #include "rcddef.h"
 #include "sub/x68funcs.h"
 #include "sub/midi_in.h"
+#include "sub/xwin.h"
+#ifdef USE_CURSES
+#include "sub/graphics_int.h"
+#endif
 
 #ifdef HAVE_SUPPORT_STED3
 # include "sted3.h"
