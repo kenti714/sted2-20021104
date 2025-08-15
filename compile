@@ -1,0 +1,3 @@
+#!/bin/sh
+# Minimal compile script for platforms lacking automake's version
+exec "$@"
