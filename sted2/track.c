@@ -8,6 +8,16 @@ void	msg();
 void	msg_clr();
 void	snsclr();
 
+void	dclr();
+int	add_set();
+void	undobuf();
+int	meas_add();
+int	meas_len();
+void	memcpy_l();
+char	*fstr();
+int	vinput();
+int	velo_ctrl();
+void	bunkatsu();
 int	trk_mix_sub();
 int	trk_ext_sub();
 int	repeat_comp();

@@ -249,6 +249,7 @@ extern int _dos_fnckeygt( int, char * );
 extern int _dos_fnckeyst( int, const char * );
 extern int _dos_inpout( int );
 extern int _dos_nfines( struct _x68_filbuf * ) ;
+extern int _dos_nfiles( struct _x68_filbuf * );
 extern int _dos_rename( const char *, const char * );
 extern int _dos_setblock( void *, int );
 extern int _dos_super( int );
