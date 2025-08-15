@@ -44,7 +44,10 @@ int	step_cluc2();
 void	edfield();
 void	g_print();
 void	txerase();
-char	*jstrupr();
+char    *jstrupr();
+void    load_sub();
+void    save_sub();
+void    memcpy_l();
 
 int	trk_mix_sub();
 int	trk_ext_sub();
@@ -668,7 +671,7 @@ void	trk_set(int md)
 }
 
 /***************************/
-/*¡Ö¸½ºß Track 1 ¤ò½èÍı¤·¤Æ¤¤¤Ş¤¹¡×*/
+/*ã€Œç¾åœ¨ Track 1 ã‚’å‡¦ç†ã—ã¦ã„ã¾ã™ã€*/
 void	exetrk_dsp(int i)
 {
   B_LOCATE(55,9);B_PRINT("TRACK=");B_PRINT(fstr(i+1,2));
