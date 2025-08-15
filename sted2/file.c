@@ -88,7 +88,13 @@ void	tim_var_read();
 void	tim_name_read();
 void	tim_name_set();
 void	gsd_buf_trns();
-void	gsd_var_read();
+void    gsd_var_read();
+
+void    memcpy_l(unsigned char *dest, unsigned char *src, int len);
+int     knck(unsigned char *st, int p);
+void    twait(int ti);
+int     exe(char *cl);
+void    OnGraphic(void);
 
 int	rcp_buf_put();
 int	rcp_buf_get();
@@ -1189,8 +1195,8 @@ int	lsp_para_set(int tr,int po,int *me_ad,int wcc)
 	}
 
 	/*
-	  41 10 42 12 cs 00 01 01 01 ss F7 <--- PART A01¤Î¼õ¿®¥Ý¡¼¥È¤òB¤Ë¤¹¤ë
-	  41 10 42 12 cs 00 01 17 00 ss F7 <--- PART B01¤Î¼õ¿®¥Ý¡¼¥È¤òA¤Ë¤¹¤ë
+	  41 10 42 12 cs 00 01 01 01 ss F7 <--- PART A01ã®å—ä¿¡ãƒãƒ¼ãƒˆã‚’Bã«ã™ã‚‹
+	  41 10 42 12 cs 00 01 17 00 ss F7 <--- PART B01ã®å—ä¿¡ãƒãƒ¼ãƒˆã‚’Aã«ã™ã‚‹
 	  */
 	if( d==0xdd ){rba=ptr[j+2]*256+ptr[j+3];}
 	if( d==0xde ){if(rba==1 && ptr[j+2]<0x17+16){goto outp;}}
