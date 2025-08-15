@@ -96,7 +96,11 @@ int	prog_no();
 int	channele_no();
 void	trk_next();
 int	spc_code();
-char	*ctrl_type();
+char    *ctrl_type();
+void    memcpy_l(unsigned char *dest, unsigned char *src, int len);
+int     chd_check(int tr,int ad,int md);
+int     tai_check(int tr,int ad);
+void    trk_lin(int i,int cx,int m);
 
 /***************************/
 /*
@@ -780,7 +784,7 @@ ext:
 int	rep_match(int f,int f2,int t,int t2,int a,int m)
 {
   if((f2&1)==0){
-    if( f== 0 && ( a==t				)){return 1;}	/* ¹çÆ±		*/
+    if( f== 0 && ( a==t				)){return 1;}	/* åˆåŒ		*/
     if( f==-1 && ((m==0 && a<128) || m!=0		)){return 1;}	/* all note	*/
     if( f==-2 && ( a<t				)){return 1;}	/* <		*/
     if( f==-3 && ( a>t && ((m==0 && a<128)||m!=0)	)){return 1;}	/* >		*/
@@ -788,19 +792,19 @@ int	rep_match(int f,int f2,int t,int t2,int a,int m)
     if( f==-5 && ( a>127 && (a<0xf0 || a==0xf7)     )){return 1;}	/* all spc	*/
 
     if( f==-6 && ( a<0xfc && (a<0xf6 || a>0xf9)	)){return 1;}	/* all data	*/
-    /*	if( f==-7 && ( a>=t	&& a<=t2		)){return 1;}*/	/* ÈÏ°Ï		*/
+    /*	if( f==-7 && ( a>=t	&& a<=t2		)){return 1;}*/	/* ç¯„å›²		*/
 
     if(m==0){
-      if( f==-7 && (a>=t && a<=t2	)&& a<128){return 1;}	/* ÈÏ°Ï	*/
+      if( f==-7 && (a>=t && a<=t2	)&& a<128){return 1;}	/* ç¯„å›²	*/
     }else{
       if( f==-7 && (a>=t && a<=t2	)){return 1;}
     }
 
-    if( f==-8 && (a>=t && a<=t2)&& a>=0x90 && a<0x98){return 1;}	/* ÈÏ°Ï(usrexc)*/
+    if( f==-8 && (a>=t && a<=t2)&& a>=0x90 && a<0x98){return 1;}	/* ç¯„å›²(usrexc)*/
 
   }else{
     if( f== 0 && a!=t){
-      if(m!=0 ||(m==0 && t<128 && a<128)	){return 1;}	/* !¹çÆ±	*/
+      if(m!=0 ||(m==0 && t<128 && a<128)	){return 1;}	/* !åˆåŒ	*/
       if(m!=0 ||(m==0 && t>127 && t<0xf0 && a>127 && a<0xf0)){return 1;}
     }
     if( f==-1 && ( a>127 && a<0xfc &&(a<0xf6 || a>0xf9))){return 1;}/* !all note	*/
@@ -810,12 +814,12 @@ int	rep_match(int f,int f2,int t,int t2,int a,int m)
     if( f==-5 && ( a<128				)){return 1;}	/* !all spc	*/
 
     if(m==0){
-      if( f==-7 && !(a>=t && a<=t2	)&& a<128){return 1;}	/* !ÈÏ°Ï*/
+      if( f==-7 && !(a>=t && a<=t2	)&& a<128){return 1;}	/* !ç¯„å›²*/
     }else{
       if( f==-7 && !(a>=t && a<=t2	)){return 1;}
     }
 
-    if( f==-8 && !(a>=t && a<=t2)&& a>=0x90 && a<0x98){return 1;}	/* !ÈÏ°Ï(usrexc)*/
+    if( f==-8 && !(a>=t && a<=t2)&& a>=0x90 && a<0x98){return 1;}	/* !ç¯„å›²(usrexc)*/
 
   }
   if( f==99 ){return 1;}
@@ -1443,11 +1447,11 @@ void	same_shift(int spo,int m,int cu)
   if(ec!=0){
     char b[4096];
     int ret;
-    ret=sprintf(b,4096,_("%4d times of SAME MEAS is invalid"),ec);
+    ret=snprintf(b, sizeof(b), _("%4d times of SAME MEAS is invalid"), ec);
     if ( ret > 0 ) {
       msg(b);
     }
-    /*msg("SAME MEAS¤¬");B_PRINT(fstr(ec,4));B_PRINT("²Õ½êÌµ¸ú¤Ë¤Ê¤ê¤Ş¤·¤¿¡£");*/
+    /*msg("SAME MEASãŒ");B_PRINT(fstr(ec,4));B_PRINT("ç®‡æ‰€ç„¡åŠ¹ã«ãªã‚Šã¾ã—ãŸã€‚");*/
   }
 
   snsclr();
@@ -2044,7 +2048,7 @@ char	*ctrl_type(int a)
 
   default :strcpy(tmp0,"CONTROL ");break;
   }
-  /*10 30 50 ÈÆÍÑÁàºî»Ò h-12341234 5678
+  /*10 30 50 æ±ç”¨æ“ä½œå­ h-12341234 5678
    */
   cc=(mdlflag&15);
   /*05rw*/

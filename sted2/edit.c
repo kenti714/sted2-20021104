@@ -101,8 +101,22 @@ void	rev_area();
 void	same_shift();
 int	buf_meas();
 void	noed_cls();
-void	tg_copy();
+void    tg_copy();
+void    tg_copy2( int edit_scr );
 void	H_PRINT();
+void    key_midi_wait( void );
+int     option22( int md, int sm, int ad, int ew );
+int     option( int md, int sm );
+int     option2( int md, int sm, int ad, int ew );
+int     mml_inp( int ad );
+int     retkey2( int ecode );
+int     retkey( int ecode );
+int     repl_select( int md );
+void    memcpy_l( unsigned char *dest, unsigned char *src, int len );
+int     replicate2( int ad, int sh );
+void    trk_quan( int tr, int po1, int po2 );
+void    load_sub( int sh );
+void    save_sub( int sh );
 
 int	size_max();
 int	size_change();
@@ -372,7 +386,7 @@ track_edit_top:
       }else{ke=0x137;}
     }
 
-    /*0¡Á9*/
+    /*0ï½ž9*/
     if( kc>0x2f && kc<0x3a ){
       int	ct;
       unsigned char da=trk[track][ad];
@@ -1380,11 +1394,11 @@ int	retkey(int ecode)
 {
   int	ke;
 
-  ke=0x3d;			/*±¦*/
-  if( ecode==13 ){ke=0x3e;}	/*²¼*/
-  if( ecode==0x13 ){ke=0x3b;}	/*º¸*/
-  if( ecode==0x18 ){ke=0x3e;}	/*²¼*/
-  if( ecode==0x05 ){ke=0x3c;}	/*¾å*/
+  ke=0x3d;			/*å³*/
+  if( ecode==13 ){ke=0x3e;}	/*ä¸‹*/
+  if( ecode==0x13 ){ke=0x3b;}	/*å·¦*/
+  if( ecode==0x18 ){ke=0x3e;}	/*ä¸‹*/
+  if( ecode==0x05 ){ke=0x3c;}	/*ä¸Š*/
 
   return ke;
 }
@@ -1392,9 +1406,9 @@ int	retkey(int ecode)
 int	retkey2(int ecode)
 {
   int	ke;
-  ke=0x3e;			/*²¼*/
-  if( ecode==0x13 ){ke=0x3b;}	/*º¸*/
-  if( ecode==0x05 ){ke=0x3c;}	/*¾å*/
+  ke=0x3e;			/*ä¸‹*/
+  if( ecode==0x13 ){ke=0x3b;}	/*å·¦*/
+  if( ecode==0x05 ){ke=0x3c;}	/*ä¸Š*/
 
   return ke;
 }
@@ -1879,8 +1893,8 @@ trpo:
 	capi=channele_no(po);
 	strcpy(tmp0,"BankProg");
 	/*					d|=(bank_no(po)&0xff00);
-						1997-10-10    	trk.ed¤Ç¤Îbankprg¤ÎÉ½¼¨¤¬bank lsb¤ËÂÐ±þ¤·¤Æ
-						¤Ê¤«¤Ã¤¿¤Î¤ò½¤Àµ¤·¤¿
+						1997-10-10    	trk.edã§ã®bankprgã®è¡¨ç¤ºãŒbank lsbã«å¯¾å¿œã—ã¦
+						ãªã‹ã£ãŸã®ã‚’ä¿®æ­£ã—ãŸ
 						*/
 	if(b==0){
 	  strcat(tmp0,prog_name(capi,d,c,3));b=1;

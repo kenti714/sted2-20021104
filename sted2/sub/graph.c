@@ -10,6 +10,8 @@
  */
 
 #include "sted.h"
+#include "xwin.h"
+#include "graphics_int.h"
 
 void g_print( int x, int y, char *str, int col ) {
 

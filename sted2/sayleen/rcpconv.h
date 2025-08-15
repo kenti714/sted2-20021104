@@ -44,4 +44,4 @@ extern long rcpconv_with_notice(
 		     unsigned char *   /* Timestamp of original RCP file */
 		     );
 
-#endif / _RCPCONV_H_ */
+#endif /* _RCPCONV_H_ */

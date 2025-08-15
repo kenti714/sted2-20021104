@@ -21,6 +21,11 @@
 extern int open_midi_port( char * );
 extern int get_midi_data( void );
 
+/* Forward declarations for measure utility functions */
+int add_set( int tr, int *add );
+int step_cluc2( int tr, int top, int len );
+int meas_add( int me );
+
 #define MAX_BAR      2048            /* max size of measure is 2048 */
 int STed_InitMeasureConversion( void );
 int STed_MeasureConversion( int track );
