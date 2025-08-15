@@ -18,7 +18,9 @@ extern int iocs_graph_home; /* 0 or 1 */
 extern char fnc_func[10][32];
 extern char fnc_sfunc[10][32];
 extern char fnc_key[12][6];
-/* ROLL UP, ROLL DOWN, INS, DEL,
+/* ROLL UP, ROLL DOWN, INS, DEL,>>>>>>> main
+54
+
    UP, LEFT, RIGHT, DOWN,
    CLR, HELP, HOME, UNDO */
 
