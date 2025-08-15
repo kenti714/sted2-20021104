@@ -35,6 +35,8 @@ int x68_scancode[]={
 #endif /* USE_NCURSES && ! RENAMED_NCURSES */
 
 #include "x68defines.h"
+#include "midi_in.h"
+#include <string.h>
 
 extern char *nkf_conv( const char *, char *, char * );
 
@@ -60,7 +62,7 @@ static void curses_rwindow( void );
 
 /* the following functions are based on curses */
 
-static iscursesinited=0;
+static int iscursesinited=0;
 static WINDOW *curses_twindow, *curses_gwindow[2], *w;
 static WINDOW *curses_awindow;
 static int current_gwindow=-1;
