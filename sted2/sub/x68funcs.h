@@ -48,5 +48,7 @@ extern void symbol( int, int, char *, char, char, char, int, char );
 
 extern FILE *fopen2( char *, char * );
 extern void STed_system_initialize( int *, char *** );
+extern void key_wait( void );
+extern void key_midi_wait( void );
 
 #endif /* _X68FUNCS_H_ */
