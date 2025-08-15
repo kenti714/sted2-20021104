@@ -100,6 +100,8 @@ void	twait();
 int	strch();
 char	*chstr();
 char	*tim_names();
+void	line_ins_aft(int ad);
+void	memcpy_l(unsigned char *dest, unsigned char *src, int len);
 
 void	inpmon();
 static void	midi_change();

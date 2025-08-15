@@ -5,7 +5,7 @@
 #include	"sted.h"
 
 static	char	uxcc[5][3]={"gt","ve","ch","cs","ss"};
-static	char	dotp[4][3]={"÷§","÷¨","÷©","÷ª"};
+static	char	dotp[4][3]={"ï¿½","ï¿½","ï¿½","ï¿½"};
 
 static unsigned char	dotpat[32][32];
 
@@ -73,7 +73,17 @@ int	dot_ed();
 void	dot_ctrl();
 void	dot_dis();
 void	dattopat();
-void	pattodat();
+void    pattodat();
+
+void    fsel();
+char    *trk_dis();
+void    txerase();
+void    poplay();
+void    twait();
+void    noed_cls_t();
+void    dpl();
+void    tpl();
+void    tg_copy2();
 
 static void exc_dis2(int ,int );
 
@@ -558,7 +568,7 @@ top:
 
     if(kc=='@'){
       /*
-	0x10 0x01¡Á5 0x00 / 0x10 0x01¡Á5 0x40
+	0x10 0x01ï½5 0x00 / 0x10 0x01ï½5 0x40
 	*/
       if( dat[0]==0x41 && dat[1]==0x10 && dat[2]==0x45 && dat[3]==0x12 &&
 	  dat[4]==0x83 && dat[5]==0x10 ){
@@ -739,7 +749,7 @@ void	exc_dis(int no,int cx,int co,int m)
   if(fl){dat[ln++]=a;}
   if(a==0xf7){fl=0;}
 
-  if(ln>=32*1024+512){msg("¥Ğ¥Ã¥Õ¥¡¤¬°ìÇÕ¤Ë¤Ê¤ê¤Ş¤·¤¿");break;}
+  if(ln>=32*1024+512){msg("ãƒãƒƒãƒ•ã‚¡ãŒä¸€æ¯ã«ãªã‚Šã¾ã—ãŸ");break;}
   }
   }
 
@@ -905,7 +915,7 @@ int	dot_ed(int dx,int co)
 
   for(i=0;i<16;i++){for(j=0;j<16;j++){dotpat[i][j]=0;}}
 
-  /*		0x10 0x01¡Á5 0x00 / 0x10 0x01¡Á5 0x40	*/
+  /*		0x10 0x01ï½5 0x00 / 0x10 0x01ï½5 0x40	*/
 
   if( dat[0]==0x41 && dat[1]==0x10 && dat[2]==0x45 && dat[3]==0x12 &&
       dat[4]==0x83 && dat[5]==0x10 && dat[6]>0 && dat[7]==0x00){
@@ -1241,7 +1251,7 @@ void	pattodat(int me)
 /***************************/
 
 /***************************/
-/*			0x10 0x01¡Á5 0x00 / 0x10 0x01¡Á5 0x40*/
+/*			0x10 0x01ï½5 0x00 / 0x10 0x01ï½5 0x40*/
 void	exc_view(int ad)
 {
   int	i,cx,gx,co,po,excmd=0;
