@@ -13,6 +13,7 @@ void	g_print();
 void	tg_copy();
 void	rev_area();
 void	txerase();
+void	txcur();
 
 /***************************/
 /*
