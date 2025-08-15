@@ -607,7 +607,6 @@ msgstr ""
 msgid "         [DOWN]SELECTER  [ESC]CANCEL  [RET]SELECT"
 msgstr ""
 
-#. msg("ファイルがありません。");goto reinp;
 #: sted2/select.c:1040
 msgid "Directory not found."
 msgstr ""
