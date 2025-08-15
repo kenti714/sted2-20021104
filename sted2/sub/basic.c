@@ -7,6 +7,8 @@
 */
 
 #include "sted.h"
+#include "xwin.h"
+#include "graphics_int.h"
 
 
 /* graphic functions */
