@@ -18,13 +18,16 @@ unsigned char	keycode[44]={
   56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77
 };
 /*
-÷«÷¬÷­÷®÷¯÷°÷±
-÷²÷²÷²÷²÷²÷²÷²
+void    msg_clr();
+void    snsclr();
+void    all_note_off();
+void    twait(int ti);
+int     str_search();
 
-÷«÷¬÷­÷®÷¯÷°÷±÷«÷¬÷­÷®÷¯÷°÷±÷«÷¬÷­÷®÷¯÷°÷±÷«÷¬÷­÷®÷¯÷°÷±
-÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²
-÷«÷¬÷­÷®÷¯÷°÷±÷«÷¬÷­÷®÷¯÷°÷±÷«÷¬÷­÷®÷¯÷°÷±÷«÷¬÷­÷®÷¯÷°÷±
-÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²÷²
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   c1     c2     c3     c4     c5     c6     c7     c8
 */
 void	msg();
@@ -113,7 +116,7 @@ void	m_keyb(int ch,int bank,int prg,int velo)
 	    if(sh&1){note+=12;}/*shift*/
 	    if(sh&2){note-=12;}/*ctrl*/
 	    if(sh&128){note+=12;}/*caps*/
-	    if(sh&256){note-=12;}/*¤«¤Ê*/
+	    if(sh&256){note-=12;}/*ã‹ãª*/
 	    onnote[i]=note;
 
 	    /* note on */
@@ -128,7 +131,7 @@ void	m_keyb(int ch,int bank,int prg,int velo)
   }
 
   /*
-    97-10-24	key.emu.¤ÇÈ¯²»¤·¤¿¤Þ¤Þ¤Ë¤Ê¤ë¤«¤â¤·¤ì¤Ê¤¤¤Î¤ò½¤Àµ¤·¤¿
+    97-10-24	key.emu.ã§ç™ºéŸ³ã—ãŸã¾ã¾ã«ãªã‚‹ã‹ã‚‚ã—ã‚Œãªã„ã®ã‚’ä¿®æ­£ã—ãŸ
 
     for (i=0;i<16;i++){
     if ( onkey[i]>32 ) {
