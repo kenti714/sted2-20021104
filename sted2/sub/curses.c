@@ -205,7 +205,7 @@ void curses_tcolor( int col ) {
   return;
 }
 
-void curses_tputs( char *message ) {
+void curses_tputs( const char *message ) {
 
 #ifdef USE_CURSES
   chtype t;

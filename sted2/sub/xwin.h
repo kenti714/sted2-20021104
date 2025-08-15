@@ -133,7 +133,7 @@ extern int XSTed_SetGColor( int );
 /* xwin_print.c */
 
 extern void XSTed_tlocate( int , int );
-extern void XSTed_tputs( char * );
+extern void XSTed_tputs( const char * );
 extern void XSTed_gputs( int , int , const char * );
 extern void XSTed_cls_eol( void );
 extern void XSTed_cls_ed( void );

@@ -17,7 +17,7 @@ extern void curses_curon( void );
 extern void curses_curoff( void );
 extern void curses_gcolor( int );
 extern void curses_tcolor( int );
-extern void curses_tputs( char * );
+extern void curses_tputs( const char * );
 extern void curses_gputs( int, int, const char * );
 extern void curses_tlocate( int, int );
 extern void curses_ghome( int );
