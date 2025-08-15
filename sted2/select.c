@@ -1049,7 +1049,7 @@ void	fsel(char *fna,char *pth,int w)
     B_LOCATE(cx+1,29);B_PRINT(_("  /   CHANGE DRIVE   /  SELECT"));
 #else
     B_LOCATE(cx+1,29);B_PRINT(_("                                      [RET]SELECT"));
-#endif 0
+#endif /* 0 */
     frees(pth,cx);B_LOCATE(cx+45,8);B_PRINT(fstr(nm,3));
 
     if(p+y>=nm){p=0;y=0;}/*check*/
@@ -1131,7 +1131,7 @@ void	fsel(char *fna,char *pth,int w)
 	  if(dro!=drn && drvchk2(fna)<0){nm=0;goto redrv;}
 	  nm=0;goto drvmove;
 	}
-#endif 0
+#endif /* 0 */
 	if( a==0x15 || a==0x8 ){
 	  path_down(pth);
 	  if(cdirc>0){cdirc--;p=cdirp[cdirc];y=cdiry[cdirc];goto resel2;}
@@ -1474,7 +1474,9 @@ void	memo_load(char *pth,char *fna)
 
   strcpy(tmp0,pth);strcat(tmp0,fna);
   if(fp= fopen2(tmp0,"rb")){
-    fread(hed,1,1414,fp);fclose(fp);
+    size_t n = fread(hed,1,1414,fp);
+    (void)n;
+    fclose(fp);
   }else{
     for(i=0;i<1414;i++){hed[i]=0;}
   }

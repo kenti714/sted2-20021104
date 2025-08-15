@@ -303,7 +303,7 @@ int	main(int argc,char *argv[])
     exit(1);
   }
 
-  if( (int)rcd==0 ) {
+  if( rcd == NULL ) {
     B_PRINT(_("RCD is not running.\n"));exit(1);
   }else{
     if( strcmp(rcd_version,"3.01")<0 || strcmp(rcd_version,"3.09")>0 ){
@@ -1468,7 +1468,9 @@ void	fonload(char *fi)
       B_PRINT(fi);B_PRINT(_(": File not found.\n"));exit(1);
     }
   } /* Oct.13.1998 by Daisuke Nagano */
-  fread(dat,1,12*1024,fp);fclose(fp);
+  size_t n = fread(dat,1,12*1024,fp);
+  (void)n;
+  fclose(fp);
   fonset(dat);
 }
 

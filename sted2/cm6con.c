@@ -601,7 +601,7 @@ int	tone_patch(int mo)
 	  cm6[ad]=i>>6;cm6[ad+1]=i & 0x3f;
 	  cm6_la_write(i);
 	}else{
-	  for(j=0;j<20;j++){cm6[ad+j]=pcm_para[j];}
+          for(j=0;j<19;j++){cm6[ad+j]=pcm_para[j];}
 	  cm6[ad]=i>>6;
 	  if(i>63){cm6[ad+1]=i-64;}else{cm6[ad+1]=pcmpat[i];}
 	  cm6_pcm_write(i);
@@ -1136,12 +1136,12 @@ void	temporary_set()
 
 /***************************/
 
-static char *cm6_tone_name_tmp;
+static char cm6_tone_name_tmp[128];
 
-char	*cm6_tone_name(int mo,int i)
+char    *cm6_tone_name(int mo,int i)
 {
-  int	i0,n,nn;
-  char	tmp0[128],tmp1[128];
+  int   i0,n,nn;
+  char  tmp1[128];
 
   if(mo==0){
     /*la tone*/
@@ -1156,11 +1156,10 @@ char	*cm6_tone_name(int mo,int i)
     }
   }
 
-  b_striS(tmp1,128,n+1);strcpy(tmp0,"000");strcat(tmp0,tmp1);
-  strcpy(tmp0,&tmp0[strlen(tmp0)-4]);tmp0[0]=tone_hed[nn];
-  strcat(tmp0," ");strcat(tmp0,spadd(tim_name[i0],10));
-  cm6_tone_name_tmp = tmp0;
-  return(cm6_tone_name_tmp);
+  b_striS(tmp1,128,n+1);strcpy(cm6_tone_name_tmp,"000");strcat(cm6_tone_name_tmp,tmp1);
+  strcpy(cm6_tone_name_tmp,&cm6_tone_name_tmp[strlen(cm6_tone_name_tmp)-4]);cm6_tone_name_tmp[0]=tone_hed[nn];
+  strcat(cm6_tone_name_tmp," " );strcat(cm6_tone_name_tmp,spadd(tim_name[i0],10));
+  return cm6_tone_name_tmp;
 }
 
 /***************************//*100/1*/
